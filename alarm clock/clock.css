@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    width: 80%;
+    max-width: 400px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.clock{
+    box-shadow: 0 0 15px 11px purple;
+    background-color: whitesmoke;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: rgb(22, 68, 196);
+    margin-bottom: 1rem;
+}
+input{
+    width: 120px;
+    margin-top: 10px;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+button{
+    margin-top: 0.8rem;
+    padding: auto;
+    width: 70%;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    background-color: dodgerblue    ;
+    border-radius: 10px;
+    cursor: pointer;
+}

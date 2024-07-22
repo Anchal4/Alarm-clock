@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    
+    <!-- Clock Image -->
+    <div class="clock">
+        <img src="assets/3d-render-alarm-clock-hurry-600nw-2234197639.png" alt="">
+        <!-- Current Time -->
+        <h1 id="time_html">00:00:00</h1>
+        <!-- Show Alarms -->
+        <h2>Alarms:</h2>
+        <ul id="alarmList"></ul>
+        <!-- Set Hour and Minutes for Alarm -->
+        <form onsubmit="setAlarm(); return false;">
+            <input type="number" placeholder="Hour" id="hour" required min="0" max="23">
+            <input type="number" placeholder="Min" id="min" required min="0" max="59">
+            <button type="submit">Set Alarm</button>
+        </form>
+        <audio id="alarmSound" src="assets/mixkit-alert-alarm-1005.wav"></audio>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
